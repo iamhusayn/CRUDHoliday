@@ -16,4 +16,4 @@ def cart(request):
 
 def save_user(request):
     user_name = request.POST['user_name']
-    return HttpResponse(f"Hi {user_name}, welcome to your Libary!")
+    return render(request,"welcome.html",context={'user_name':user_name})
