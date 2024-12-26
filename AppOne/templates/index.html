@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Management System</title>
+</head>
+<body>
+  <h1>Welcome to Book Management Portal</h1>
+
+  <div>
+    <a href="books/">Books</a>
+    <a href="cart/">Check Cart</a>
+  </div>
+
+  <form method="POST" action="save/">
+    {% csrf_token %}
+    <label for="name">Enter your name</label>
+    <input type="text" name="reader_name">
+
+    <!-- <label for="name">Search Books</label>
+    <input type="text">  -->
+
+    <button type="submit">Save</button>
+
+  </form>
+
+
+
+</body>
+</html>
