@@ -15,5 +15,5 @@ def cart(request):
     return HttpResponse("My selected books are stroed here")
 
 def save_user(request):
-    user_name = request.POST['user_name']
-    return render(request,"welcome.html",context={'user_name':user_name})
+    users_name = request.POST['users_name']
+    return render(request,"welcome.html",context={'users_name':users_name})
