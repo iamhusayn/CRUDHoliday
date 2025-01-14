@@ -6,4 +6,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def authors(request):
-  return HttpResponse("You can view the authours here.") 
+  return HttpResponse("Welcome to the author's page.") 

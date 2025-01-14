@@ -12,8 +12,9 @@ def view_books(request):
     return HttpResponse("Welcome to your cart. What books will you like to add?")
 
 def cart(request):
-    return HttpResponse("My selected books are stroed here")
+    return HttpResponse("My selected books are storedd here")
 
 def save_user(request):
     users_name = request.POST['users_name']
     return render(request,"welcome.html",context={'users_name':users_name})
+
